@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:gamedb
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+
+game:
+  min-guess-value: 1
+  max-guess-value: 10
+  win-stake-multiplier: 9.9
+  bots: true
+  round-rate-ms: 10000
+  win-stat-rate-ms: 30000
+  initial-balance: 10000
