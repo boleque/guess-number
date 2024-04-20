@@ -1,7 +1,6 @@
 # Guess number game
 ![](https://github.com/boleque/guess_number_game/blob/session-as-nickname/game.gif)
 ## Requirements
-Write backend for a guess the number game with using WebSocket for communication.  
 Game process:  
 1) The server starts a round of the game and gives 10 seconds to place a bet for the players on
    numbers from 1 to 10 with the amount of the bet;  
@@ -13,15 +12,11 @@ Game process:
    the amount of winnings;  
 6) The process is repeated.  
 
-Technical requirements:  
-Java 11+, Gradle, Spring Boot 2+  
-Unit and integration test coverage  
 Communication between players and the server via WebSocket  
-STOMP is not used  
-Validation of submitted data  
+I didn't use STOMP
 
 ## Architecture, Implementation
-For simplicity, I've implemented a simple user registration, namely when a client connects, a record of the form {Player_SesionId} is created in the database.  
+A simple user registration implemented, namely when a client connects, a record of the form {Player_SesionId} is created in the database.  
 In essence, the lifetime of an account is the lifetime of a session, but having an entry in the database allows to accumulate statistics.  
 
 ##  Game
