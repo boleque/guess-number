@@ -1,4 +1,5 @@
 # Guess number game
+## Demo
 ![](https://github.com/boleque/guess_number_game/blob/session-as-nickname/game.gif)
 ## Requirements
 Game process:  
